@@ -1,0 +1,107 @@
+.notes-container {
+    color: #fff;
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+
+    header {
+        font-size: 1.2rem;
+
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            background: #ff6f47;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #ff3700;
+            }
+        }
+    }
+
+    form {
+        min-height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        input,
+        button {
+            width: 50%;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            border: none;
+            background: #fff;
+            outline: none;
+        }
+
+        button {
+            width: fit-content;
+            color: #fda085;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #fda085;
+                color: #fff;
+            }
+        }
+    }
+
+    .todo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .todo-list {
+            min-width: 30%;
+            list-style: none;
+
+            .todo {
+                margin: 0.5rem;
+                background: #fff;
+                color: black;
+                font-size: 1.2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: all 0.5s ease;
+
+                .todo-item {
+                    flex: 1;
+                    padding: 0 0.5rem;
+                }
+
+                .trash-btn,
+                .complete-btn {
+                    background: #ff6f47;
+                    color: #fff;
+                    border: none;
+                    padding: 1rem;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    outline: none;
+                }
+                .complete-btn {
+                    background: rgb(73, 204, 73);
+                }
+
+                i {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}

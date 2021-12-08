@@ -1,10 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #c0a650, #fda085);
 }
 
 .container {
@@ -340,5 +345,179 @@
           transform: translateX(0);
   opacity: 1;
   pointer-events: auto;
+}
+
+.notes-container {
+  color: #fff;
+  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.notes-container header {
+  font-size: 1.2rem;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notes-container header a {
+  color: #fff;
+  text-decoration: none;
+  background: #ff6f47;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.notes-container header a:hover {
+  background: #ff3700;
+}
+
+.notes-container form {
+  min-height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notes-container form input,
+.notes-container form button {
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: #fff;
+  outline: none;
+}
+
+.notes-container form button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fda085;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.notes-container form button:hover {
+  background: #fda085;
+  color: #fff;
+}
+
+.notes-container form .select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.notes-container form .select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 0.85rem;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.notes-container form .select:hover::after {
+  background: #fff;
+  color: #ff6f47;
+}
+
+.notes-container form .select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.85rem;
+}
+
+.notes-container .todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notes-container .todo-container .todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.notes-container .todo-container .todo-list .todo {
+  margin: 0.5rem;
+  background: #fff;
+  color: black;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.notes-container .todo-container .todo-list .todo .todo-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 0.5rem;
+}
+
+.notes-container .todo-container .todo-list .todo .trash-btn,
+.notes-container .todo-container .todo-list .todo .complete-btn {
+  background: #ff6f47;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.notes-container .todo-container .todo-list .todo .complete-btn {
+  background: #49cc49;
+}
+
+.notes-container .todo-container .todo-list .todo i {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
