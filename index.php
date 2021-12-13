@@ -37,7 +37,7 @@ include './assets/components/_dbconnect.php';
         </header>
 
         <form action="./assets/components/_noteAddHandler.php" method="POST">
-            <input type="text" class="todo-input" name="note" />
+            <input type="text" class="todo-input" name="note" autocomplete="off" />
             <button class="todo-button" type="submit">
                 <i class="fas fa-plus-square"></i>
             </button>
