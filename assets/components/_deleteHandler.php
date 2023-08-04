@@ -26,5 +26,5 @@ if (isset($_GET['noteid'])) {
     }
 
 
-    header('Location: /web-programming/assignment/index.php?success=' . $success . '&alert=' . $alert);
+    header('Location: /notes-manager/index.php?success=' . $success . '&alert=' . $alert);
 }

@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["userid"] = $row["id"];
             $_SESSION["name"] = $row["name"];
 
-            header("Location: /web-programming/assignment/index.php?success=true&alert=Login Successful...");
+            header("Location: /notes-manager/index.php?success=true&alert=Login Successful...");
             exit();
         } else {
             echo $error = "Invalid Credentials!";
@@ -27,5 +27,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo $error = "Invalid Credentials!";
     }
-    header("Location: /web-programming/assignment/login.php?success=false&alert=$error");
+    header("Location: /notes-manager/login.php?success=false&alert=$error");
 }

@@ -3,5 +3,5 @@ session_start();
 session_unset();
 session_destroy();
 
-header("Location: /web-programming/assignment/login.php");
+header("Location: /notes-manager/login.php");
 exit();

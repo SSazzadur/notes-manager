@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $_SESSION['email'] = $email;
                 $_SESSION['userid'] = mysqli_insert_id($conn);
 
-                header("Location: /web-programming/assignment/index.php?success=true&alert=Registration Successful...");
+                header("Location: /notes-manager/index.php?success=true&alert=Registration Successful...");
                 exit();
             } else {
                 $error = "Something went wrong...";
@@ -39,5 +39,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 
-    header("Location: /web-programming/assignment/login.php?success=false&alert=$error");
+    header("Location: /notes-manager/login.php?success=false&alert=$error");
 }
